@@ -5,21 +5,6 @@ const qs = (element) => document.querySelector(element);
 let playerOneChoice = undefined;
 let playerTwoChoice = undefined;
 
-// defining buttons
-const pOneRockButton = qs('r');
-const pTwoRockButton = qs('r');
-const pOnePaperButton = qs('p');
-const pTwoPaperButton = qs('p');
-const pOneScissorsButton = qs('s');
-const pTwoScissorsButton = qs('s');
-
-// this isn't working...
-console.log(pOneRockButton);
-const showPlayerOneChoice = qs('.playerOneChoice');
-showPlayerOneChoice.textContent = playerOneChoice;
-const showPlayerTwoChoice = qs('.playerTwoChoice');
-showPlayerTwoChoice.textContent = playerTwoChoice;
-
 // comparing results
 const comparePlayers = () => {
 	// if player 1 and 2 tie
@@ -52,9 +37,7 @@ const comparePlayers = () => {
 	}
 };
 
-// program to run choices
 const main = () => {
-	qs('.player-1-rock-button').addEventListener('click', pOneRockButton);
-	console.log('.pOneRockButton');
+	// add function to run program here
 };
 document.addEventListener('DOMContentLoaded', main);
